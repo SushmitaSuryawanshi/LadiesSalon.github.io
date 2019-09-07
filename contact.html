@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Womans Beauty Parlour</title>
+
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+ <link rel="stylesheet" href="index2.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+</head>
+
+<style>
+
+</style>
+</head>
+<body>
+  
+
+
+<div class=" img-responsive">
+    <img src="f2.jpg" style="width: 100%" >
+<nav class="navbar navbar-expand-lg navbar fixed-top">
+        <a href="index2.html" class="navbar-brand">BeautySalon</a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse3">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse3">
+            <form class="form-inline ml-auto" >
+                <div class="navbar-nav">
+                  <a href="index2.html" class=" navbar-item nav-link ">HOME</a>
+              <a href="appoint.html" class="navbar-item nav-link ">APPOINTMENT</a>
+              <a href="products.html" class=" navbar-item nav-link ">PRODUCTS</a>
+                <a href="about.html" class="navbar-item nav-link" >OFFERS</a>
+                <a href="contact.html" class="navbar-item nav-link" >CONTACT</a>
+            </div>
+            </form>
+        </div>
+    </nav>
+
+<div class="container">
+<h1 class="ml5">
+  <span class="text-wrapper">
+    <span class="line line1"></span>
+    <span class="letters letters-left">Contact Us</span>
+    <span class="line line2"></span>
+  </span>
+</h1>
+
+
+<script>
+  anime.timeline({loop: true})
+  .add({
+    targets: '.ml5 .line',
+    opacity: [0.5,1],
+    scaleX: [0, 1],
+    easing: "easeInOutExpo",
+    duration: 700
+  }).add({
+    targets: '.ml5 .line',
+    duration: 600,
+    easing: "easeOutExpo",
+    translateY: (el, i) => (-0.625 + 0.625*2*i) + "em"
+  }).add({
+    targets: '.ml5 .ampersand',
+    opacity: [0,1],
+    scaleY: [0.5, 1],
+    easing: "easeOutExpo",
+    duration: 600,
+    offset: '-=600'
+  }).add({
+    targets: '.ml5 .letters-left',
+    opacity: [0,1],
+    translateX: ["0.5em", 0],
+    easing: "easeOutExpo",
+    duration: 600,
+    offset: '-=300'
+  }).add({
+    targets: '.ml5 .letters-right',
+    opacity: [0,1],
+    translateX: ["-0.5em", 0],
+    easing: "easeOutExpo",
+    duration: 600,
+    offset: '-=600'
+  }).add({
+    targets: '.ml5',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+</script>
+</div>
+  </div>
+<br>
+
+<section>
+  <div class="container-contact100">
+    <div class="wrap-contact100">
+      <form class="contact100-form validate-form">
+        <span class="contact100-form-title">
+          Send Us A Message
+        </span>
+
+        <label class="label-input100" for="first-name">Tell us your name *</label>
+        <div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Type first name">
+          <input id="first-name" class="input100" type="text" name="first-name" placeholder="First name">
+          <span class="focus-input100"></span>
+        </div>
+        <div class="wrap-input100 rs2-wrap-input100 validate-input" data-validate="Type last name">
+          <input class="input100" type="text" name="last-name" placeholder="Last name">
+          <span class="focus-input100"></span>
+        </div>
+
+        <label class="label-input100" for="email">Enter your email *</label>
+        <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+          <input id="email" class="input100" type="text" name="email" placeholder="Eg. example@email.com">
+          <span class="focus-input100"></span>
+        </div>
+
+        <label class="label-input100" for="phone">Enter phone number</label>
+        <div class="wrap-input100">
+          <input id="phone" class="input100" type="text" name="phone" placeholder="Eg. +91 855 000000">
+          <span class="focus-input100"></span>
+        </div>
+
+        <label class="label-input100" for="message">Message *</label>
+        <div class="wrap-input100 validate-input" data-validate = "Message is required">
+          <textarea id="message" class="input100" name="message" placeholder="Write us a message"></textarea>
+          <span class="focus-input100"></span>
+        </div>
+
+        <div class="container-contact100-form-btn">
+          <button class="contact100-form-btn">
+            Send Message
+          </button>
+        </div>
+      </form>
+
+      <div class="contact100-more flex-col-c-m" style="background-image: url('s16.jpeg');">
+        <div class="flex-w size1 p-b-47">
+          <div class="txt1 p-r-25">
+            <span class="lnr lnr-map-marker"></span>
+          </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15126.379190048026!2d73.7821344!3d18.5922981!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa3de8a2053df6a62!2sAayansh%20Germinate%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1567230519434!5m2!1sen!2sin" width="100%" height="450" frameborder="0" style="border:0; padding-top: 40px" allowfullscreen="" ></iframe>
+   </div>
+  </div>
+</section>
+
+
+  <div id="dropDownSelect1"></div>
+
+<!--===============================================================================================-->
+  <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+  <script src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+  <script src="vendor/bootstrap/js/popper.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+  <script src="vendor/select2/select2.min.js"></script>
+  <script>
+    $(".selection-2").select2({
+      minimumResultsForSearch: 20,
+      dropdownParent: $('#dropDownSelect1')
+    });
+  </script>
+<!--===============================================================================================-->
+  <script src="vendor/daterangepicker/moment.min.js"></script>
+  <script src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+  <script src="vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+  <script src="js/main.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-23581568-13');
+  </script>
+</section>
+
+<section >
+  <button class="open-button" onclick="openForm()">Got a Question?</button>
+
+<div class="chat-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h3>Get an Answer.</h3>
+
+    <label for="msg"><b>Message</b></label>
+    <textarea placeholder="Type message.." name="msg" required></textarea>
+
+    <button type="submit" class="btn">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+
+</section>
+
+<div class="footer contact10-more">
+  <div class="container  ">
+    <div class="row">
+      <div class="col-sm-4" >
+        <h4></h4>
+        <h4>BeautySalon</h4>
+      <p><span style="font-weight: bold">Address:</span> 
+      Building no.17, Near Prozon Multiplex, Aurangabad  432001 India</p>
+      <p><span style="font-weight: bold">Branch:</span> 
+      Building no.40, Near Chichwad-Station, Pune  421015 India</p>
+      
+    </div>
+    <div class="col-sm-4">
+      <h4></h4>
+      <h5>OPEN HOURS:</h5>
+      <p>If you feel tired and stressed after a working day, we are happy to give you an enjoyable and healthy solution to find your balance again.</p>
+      <ul>
+        <li>Mon-Fri: 9 AM – 6 PM</li>
+        <li>Saturday: 9 AM – 4 PM</li>
+        <li>Sunday: Closed</li>
+      </ul>
+    </div>
+    <div class="col-sm-4">
+      <h4>Links:</h4>
+      <p>Home</p>
+      <p>About Us</p>
+      <p>Contact</p>
+      <input type="search" name="search" placeholder="Please, enter your email address.">
+    <button class="btn btn-dark">SUBSCRIBE</button><br>
+    <i class="fa fa-facebook"></i>
+    <i class="fa fa-twitter"></i>
+    <i class="fa fa-instagram"></i>
+    <i class="fa fa-google"></i>        
+    <i class="fa fa-whatsapp"></i>
+
+
+    </div>
+    </div>
+  </div>
+  <div class="container">
+    
+  </div><br>
+  <p class="text-center">Copyright © 2019. All Rights Reserved.</p>
+</div>
+</body>
+</html>

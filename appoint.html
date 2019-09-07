@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Womans Beauty Parlour</title>
+
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+ <link rel="stylesheet" href="index2.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+</head>
+
+<style>
+
+</style>
+</head>
+<body>
+
+<div class=" img-responsive">
+    <img src="b5.jpg" style="width: 100%" >
+<div class="container">
+<h1 class="ml9">
+  <span class="text-wrapper">
+    <span class="letters">Service at Your  </span>
+  </span>
+</h1>
+<h1 class="m20">
+  <span class="text-wrapper">
+    <span class="letters">Location on One Click  </span>
+  </span>
+</h1>
+<script>
+// Wrap every letter in a span
+var textWrapper = document.querySelector('.ml9 .letters');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml9 .letter',
+    scale: [0, 1],
+    duration: 1500,
+    elasticity: 600,
+    delay: (el, i) => 45 * (i+1)
+  }).add({
+    targets: '.ml9',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+  var textWrapper = document.querySelector('.m20 .letters');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.m20 .letter',
+    scale: [0, 1],
+    duration: 1500,
+    elasticity: 600,
+    delay: (el, i) => 45 * (i+1)
+  }).add({
+    targets: '.m20',
+    opacity: 0,
+    duration: 2000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+</script>
+</div>
+</div>
+
+<div class="container">
+<nav class="navbar navbar-expand-lg navbar fixed-top">
+        <a href="index2.html" class="navbar-brand">BeautySalon</a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse3">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse3">
+            
+            <form class="form-inline ml-auto" >
+                <div class="navbar-nav">
+                  <a href="index2.html" class=" navbar-item nav-link ">HOME</a>
+                <a href="appoint.html" class=" navbar-item nav-link ">APPOINTMENT</a>
+                <a href="about.html" class=" navbar-item nav-link">OFFERS</a>
+                <a href="products.html" class=" navbar-item nav-link ">PRODUCTS</a>
+                <a href="contact.html" class=" navbar-item nav-link">CONTACT</a>
+            </div>
+            </form>
+        </div>
+    </nav>
+
+  </div>
+<br>
+
+ <section>
+  <div class="container text-center">
+<h1 class="ml6">
+  <span class="text-wrapper">
+    <span class="line line1"></span>
+    <span class="letters letters-left">Book </span>
+    <span class="letters letters-right">Appointment</span>
+    <span class="line line2"></span>
+  </span>
+</h1>
+
+
+<script>
+  anime.timeline({loop: true})
+  .add({
+    targets: '.ml6 .line',
+    opacity: [0.5,1],
+    scaleX: [0, 1],
+    easing: "easeInOutExpo",
+    duration: 700
+  }).add({
+    targets: '.ml6 .line',
+    duration: 600,
+    easing: "easeOutExpo",
+    translateY: (el, i) => (-0.625 + 0.625*2*i) + "em"
+  }).add({
+    targets: '.ml6 .ampersand',
+    opacity: [0,1],
+    scaleY: [0.5, 1],
+    easing: "easeOutExpo",
+    duration: 600,
+    offset: '-=600'
+  }).add({
+    targets: '.ml6 .letters-left',
+    opacity: [0,1],
+    translateX: ["0.5em", 0],
+    easing: "easeOutExpo",
+    duration: 600,
+    offset: '-=300'
+  }).add({
+    targets: '.ml6 .letters-right',
+    opacity: [0,1],
+    translateX: ["-0.5em", 0],
+    easing: "easeOutExpo",
+    duration: 600,
+    offset: '-=600'
+  }).add({
+    targets: '.ml6',
+    opacity: 0,
+    duration: 1500,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+</script>
+</div>
+</section>
+<br>
+
+
+ <div class="container">
+  <div class="row">
+  <div class="col-sm-6 ">
+    <div class="sec" style="padding: 20px">
+      <form action="/action_page.php">
+           
+            <label for="fname" style="text-align: left;"><i class="fa fa-user"></i> Full Name</label>
+            <input type="text" id="fname" name="firstname" >
+            <label for="email" style="text-align: left;"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="email" name="email">
+            <label for="city" style="text-align: left;"><i class="fa fa-institution"></i> City</label>
+            <input type="text" id="city" name="city">
+            <label for="adr" style="text-align: left;"><i class="fa fa-address-card-o"></i> Time and Date</label>
+            <input type="date" id="adr" name="address" >     <input type="time" id="adr" name="address" >
+            <label style="text-align: left">
+
+          <br>
+            <input type="checkbox" checked="checked" name="sameadr"> Home service address same as billing
+            </label>
+            
+          </form>
+          <button class="btn1" data-toggle="modal" data-target="#myModal">SUBMIT</button>
+        </div>
+</div>
+  <div class="col-sm-5 ">
+    <div class="sec" style="padding: 20px">
+      <img src="r1.jpg" style="background-size: cover; background-repeat: no-repeat; width: 100%">
+        </div>
+</div>
+
+ </div>
+</div>
+</section>
+<section >
+  <button class="open-button" onclick="openForm()">Got a Question?</button>
+
+<div class="chat-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h3>Get an Answer.</h3>
+
+    <label for="msg"><b>Message</b></label>
+    <textarea placeholder="Type message.." name="msg" required></textarea>
+
+    <button type="submit" class="btn">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+
+</section>
+
+<div class="footer  contact10-more">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4" >
+        <h4></h4>
+        <h4>BeautySalon</h4>
+      <p><span style="font-weight: bold">Address:</span> 
+      Building no.17, Near Prozon Multiplex, Aurangabad  432001 India</p>
+      <p><span style="font-weight: bold">Branch:</span> 
+      Building no.40, Near Chichwad-Station, Pune  421015 India</p>
+      
+    </div>
+    <div class="col-sm-4">
+      <h4></h4>
+      <h5>OPEN HOURS:</h5>
+      <p>If you feel tired and stressed after a working day, we are happy to give you an enjoyable and healthy solution to find your balance again.</p>
+      <ul>
+        <li>Mon-Fri: 9 AM – 6 PM</li>
+        <li>Saturday: 9 AM – 4 PM</li>
+        <li>Sunday: Closed</li>
+      </ul>
+    </div>
+    <div class="col-sm-4">
+      <h4>Links:</h4>
+      <p>Home</p>
+      <p>About Us</p>
+      <p>Contact</p>
+      <input type="search" name="search" placeholder="Please, enter your email address.">
+    <button class="btn btn-dark">SUBSCRIBE</button><br>
+    <i class="fa fa-facebook"></i>
+    <i class="fa fa-twitter"></i>
+    <i class="fa fa-instagram"></i>
+    <i class="fa fa-google"></i>        
+    <i class="fa fa-whatsapp"></i>
+
+
+    </div>
+    </div>
+  </div>
+  <div class="container">
+    
+  </div><br>
+  <p class="text-center">Copyright © 2019. All Rights Reserved.</p>
+</div>
+
+
+
+
+
+  <!-- The Modal -->
+  <div class="modal" id="myModal" >
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Confirm Booking</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body container12 sec1">
+  <div class="row">
+  <div class="col-75 Services">
+      <form action="/action_page.php">
+        <div class="row">
+          <div class="col-50">
+            <label for="fname" style="text-align: left;">Accepted Cards</label>
+            <div class="icon-container1">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;"></i>
+            </div>
+            <label for="cname" style="text-align: left;">Name on Card</label>
+            <input type="text" id="cname" name="cardname" >
+            <label for="ccnum" style="text-align: left;">Credit card number</label>
+            <input type="text" id="ccnum" name="cardnumber" >
+            <label for="expmonth" style="text-align: left;">Exp Month</label>
+            <input type="text" id="expmonth" name="expmonth" >
+          </div>
+        </div>
+        <label style="text-align: left">
+          <input type="checkbox" checked="checked" name="sameadr"> Home service address same as billing
+        </label>
+       
+      </form>
+  </div>
+</div>
+</div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+           <input  type="submit" class="btn btn-danger" value="SUBMIT" class="btn" data-dismiss="modal">
+          </div>
+     
+      </div>
+    </div>
+  </div>
+
+
+</body>
+</html>

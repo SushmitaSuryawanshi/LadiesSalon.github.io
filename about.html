@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Womans Beauty Parlour</title>
+
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+ <link rel="stylesheet" href="index2.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+</head>
+
+<style>
+  p{
+    size: 25px;
+  }
+.columns {
+  float: left;
+  width: 33.3%;
+  padding: 8px;
+}
+
+.price {
+  list-style-type: none;
+  border: 1px solid #eee;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.price:hover {
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.1)
+}
+
+.price .header1 {
+  background-color: #b53a57;
+  color: white;
+  font-size: 25px;
+}
+
+.price li {
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+}
+
+.price .grey {
+  background-color: #eee;
+  font-size: 20px;
+}
+
+.button {
+  background-color: #eb7862;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 600px) {
+  .columns {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+  
+
+
+<div class=" img-responsive">
+    <img src="d8.jpg" style="width: 100%" >
+
+<nav class="navbar navbar-expand-lg navbar fixed-top">
+        <a href="index2.html" class="navbar-brand">BeautySalon</a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse3">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse3">
+            
+            <form class="form-inline ml-auto" >
+                <div class="navbar-nav">
+                  <a href="index2.html" class=" navbar-item nav-link ">HOME</a>
+                <a href="appoint.html" class=" navbar-item nav-link ">APPOINTMENT</a>
+                <a href="about.html" class=" navbar-item nav-link">OFFERS</a>
+                <a href="products.html" class=" navbar-item nav-link ">PRODUCTS</a>
+                <a href="contact.html" class=" navbar-item nav-link">CONTACT</a>
+            </div>
+            </form>
+        </div>
+    </nav>
+    <div class="container">
+<h1 class="ml5">
+  <span class="text-wrapper">
+    <span class="line line1"></span>
+    <span class="letters letters-left">OFFERS FOR YOU</span>
+    <span class="line line2"></span>
+  </span>
+</h1>
+
+
+<script>
+  anime.timeline({loop: true})
+  .add({
+    targets: '.ml5 .line',
+    opacity: [0.5,1],
+    scaleX: [0, 1],
+    easing: "easeInOutExpo",
+    duration: 700
+  }).add({
+    targets: '.ml5 .line',
+    duration: 600,
+    easing: "easeOutExpo",
+    translateY: (el, i) => (-0.625 + 0.625*2*i) + "em"
+  }).add({
+    targets: '.ml5 .ampersand',
+    opacity: [0,1],
+    scaleY: [0.5, 1],
+    easing: "easeOutExpo",
+    duration: 600,
+    offset: '-=600'
+  }).add({
+    targets: '.ml5 .letters-left',
+    opacity: [0,1],
+    translateX: ["0.5em", 0],
+    easing: "easeOutExpo",
+    duration: 600,
+    offset: '-=300'
+  }).add({
+    targets: '.ml5 .letters-right',
+    opacity: [0,1],
+    translateX: ["-0.5em", 0],
+    easing: "easeOutExpo",
+    duration: 600,
+    offset: '-=600'
+  }).add({
+    targets: '.ml5',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+</script>
+</div>
+  </div>
+<br>
+ 
+
+<section>
+  <div class="container text-center">
+<h1 class="ml6">
+  <span class="text-wrapper">
+    <span class="line line1"></span>
+    <span class="letters letters-left" style="font-family: Lucida Calligraphy; font-weight: bold;">Plans </span>
+    <span class="line line2"></span>
+  </span>
+</h1>
+
+
+<script>
+  anime.timeline({loop: true})
+  .add({
+    targets: '.ml6 .line',
+    opacity: [0.5,1],
+    scaleX: [0, 1],
+    easing: "easeInOutExpo",
+    duration: 700
+  }).add({
+    targets: '.ml6 .line',
+    duration: 600,
+    easing: "easeOutExpo",
+    translateY: (el, i) => (-0.625 + 0.625*2*i) + "em"
+  }).add({
+    targets: '.ml6 .ampersand',
+    opacity: [0,1],
+    scaleY: [0.5, 1],
+    easing: "easeOutExpo",
+    duration: 600,
+    offset: '-=600'
+  }).add({
+    targets: '.ml6 .letters-left',
+    opacity: [0,1],
+    translateX: ["0.5em", 0],
+    easing: "easeOutExpo",
+    duration: 600,
+    offset: '-=300'
+  }).add({
+    targets: '.ml6 .letters-right',
+    opacity: [0,1],
+    translateX: ["-0.5em", 0],
+    easing: "easeOutExpo",
+    duration: 600,
+    offset: '-=600'
+  }).add({
+    targets: '.ml6',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+</script>
+</div>
+</section>
+<br>
+
+<section>
+  <div class="container">
+  <div class="columns">
+  <ul class="price">
+    <li class="header1">Basic</li>
+    <li class="grey">Rs. 999 / year</li>
+    <li>Facial</li>
+    <li>Threading</li>
+   
+    <li class="grey"><a href="#" class="button">Buy Now</a></li>
+  </ul>
+</div>
+
+<div class="columns">
+  <ul class="price">
+    <li class="header1" style="background-color:#4CAF50">Pro</li>
+    <li class="grey">Rs. 2499 / year</li>
+    <li>Hair Cut</li>
+    <li>Hair Style</li>
+    
+    <li class="grey"><a href="#" class="button">Buy Now</a></li>
+  </ul>
+</div>
+
+<div class="columns">
+  <ul class="price">
+    <li class="header1">Premium</li>
+    <li class="grey">Rs. 4999 / year</li>
+    <li>Spa</li>
+    <li>Massage</li>
+    
+    <li class="grey"><a href="#" class="button">Buy Now</a></li>
+  </ul>
+</div>
+</div>
+
+</section>
+<br>
+
+<section>
+  <div class="container text-center">
+<h1 class="ml7">
+  <span class="text-wrapper">
+    <span class="line line1"></span>
+    <span class="letters letters-left" style="font-family: Lucida Calligraphy; font-weight: bold;">Coupons </span>
+    <span class="line line2"></span>
+  </span>
+</h1>
+
+
+<script>
+  anime.timeline({loop: true})
+  .add({
+    targets: '.ml7 .line',
+    opacity: [0.5,1],
+    scaleX: [0, 1],
+    easing: "easeInOutExpo",
+    duration: 700
+  }).add({
+    targets: '.ml7 .line',
+    duration: 600,
+    easing: "easeOutExpo",
+    translateY: (el, i) => (-0.625 + 0.625*2*i) + "em"
+  }).add({
+    targets: '.ml7 .ampersand',
+    opacity: [0,1],
+    scaleY: [0.5, 1],
+    easing: "easeOutExpo",
+    duration: 600,
+    offset: '-=600'
+  }).add({
+    targets: '.ml7 .letters-left',
+    opacity: [0,1],
+    translateX: ["0.5em", 0],
+    easing: "easeOutExpo",
+    duration: 600,
+    offset: '-=300'
+  }).add({
+    targets: '.ml7 .letters-right',
+    opacity: [0,1],
+    translateX: ["-0.5em", 0],
+    easing: "easeOutExpo",
+    duration: 600,
+    offset: '-=600'
+  }).add({
+    targets: '.ml7',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+</script>
+</div>
+</section>
+<br>
+
+
+<section>
+ 
+  <div class="container">
+ <div class="row">
+  <div class="col-sm-4"> 
+    <div class="coupon shakeimg" >
+  <img src="h1.jpg" alt="Avatar" style="width:100%; padding: 10px">
+  <div class="container" style="background-color:white">
+    <h5><b>60% OFF YOUR PURCHASE</b></h5> 
+    <p>Lorem ipsum dolor sit amet, et nam pertinax gloriatur.</p>
+  </div>
+  <div class="container">
+    <p>Use Promo Code: <span class="promo">BOH232</span></p>
+    <p class="expire">Expires: Jan 03, 2021</p>
+  </div>
+</div></div>
+<div class="col-sm-4"> 
+    <div class="coupon  shakeimg">
+  <img src="h1.jpg" alt="Avatar" style="width:100%; padding: 10px">
+  <div class="container" style="background-color:white">
+    <h5><b>60% OFF YOUR PURCHASE</b></h5> 
+    <p>Lorem ipsum dolor sit amet, et nam pertinax gloriatur.</p>
+  </div>
+  <div class="container">
+    <p>Use Promo Code: <span class="promo">BOH232</span></p>
+    <p class="expire">Expires: Jan 03, 2021</p>
+  </div>
+</div></div>
+  <div class="col-sm-4">
+     <div class="coupon  shakeimg">
+  <img src="h1.jpg" alt="Avatar" style="width:100%; padding: 10px">
+  <div class="container" style="background-color:white">
+    <h5><b>60% OFF YOUR PURCHASE</b></h5> 
+    <p>Lorem ipsum dolor sit amet, et nam pertinax gloriatur.</p>
+  </div>
+  <div class="container">
+    <p>Use Promo Code: <span class="promo">BOH232</span></p>
+    <p class="expire">Expires: Jan 03, 2021</p>
+  </div>
+</div>
+ </div>
+</div>
+</div>
+ 
+<br>
+ <div class="container">
+ <div class="row">
+ <div class="col-sm-4">
+     <div class="coupon  shakeimg">
+  <img src="h2.jpg" alt="Avatar" style="width:100%; padding: 10px">
+  <div class="container" style="background-color:white; padding: 5px">
+    <h5><b>20% OFF YOUR PURCHASE</b></h5> 
+    <p>Lorem ipsum dolor sit amet, et nam pertinax gloriatur.</p>
+  </div>
+  <div class="container">
+    <p>Use Promo Code: <span class="promo">BOH232</span></p>
+    <p class="expire">Expires: Jan 03, 2021</p>
+  </div>
+</div>
+ </div>
+ <div class="col-sm-4">
+     <div class="coupon  shakeimg">
+  <img src="h2.jpg" alt="Avatar" style="width:100%; padding: 10px">
+  <div class="container" style="background-color:white">
+    <h5><b>20% OFF YOUR PURCHASE</b></h5> 
+    <p>Lorem ipsum dolor sit amet, et nam pertinax gloriatur.</p>
+  </div>
+  <div class="container">
+    <p>Use Promo Code: <span class="promo">BOH232</span></p>
+    <p class="expire">Expires: Jan 03, 2021</p>
+  </div>
+</div>
+ </div>
+ <div class="col-sm-4">
+     <div class="coupon  shakeimg">
+  <img src="h2.jpg" alt="Avatar" style="width:100%; padding: 10px">
+  <div class="container" style="background-color:white">
+    <h5><b>20% OFF YOUR PURCHASE</b></h5> 
+    <p>Lorem ipsum dolor sit amet, et nam pertinax gloriatur. </p>
+  </div>
+  <div class="container">
+    <p>Use Promo Code: <span class="promo">BOH232</span></p>
+    <p class="expire">Expires: Jan 03, 2021</p>
+  </div>
+</div>
+ </div>
+</div>
+</div>
+</section>
+
+
+<section >
+  <button class="open-button" onclick="openForm()">Got a Question?</button>
+
+<div class="chat-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h3>Get an Answer.</h3>
+
+    <label for="msg"><b>Message</b></label>
+    <textarea placeholder="Type message.." name="msg" required></textarea>
+
+    <button type="submit" class="btn">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+
+</section>
+
+<div class="footer  contact10-more">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4" >
+        <h4></h4>
+        <h4>BeautySalon</h4>
+      <p><span style="font-weight: bold">Address:</span> 
+      Building no.17, Near Prozon Multiplex, Aurangabad  432001 India</p>
+      <p><span style="font-weight: bold">Branch:</span> 
+      Building no.40, Near Chichwad-Station, Pune  421015 India</p>
+      
+    </div>
+    <div class="col-sm-4">
+      <h4></h4>
+      <h5>OPEN HOURS:</h5>
+      <p>If you feel tired and stressed after a working day, we are happy to give you an enjoyable and healthy solution to find your balance again.</p>
+      <ul>
+        <li>Mon-Fri: 9 AM – 6 PM</li>
+        <li>Saturday: 9 AM – 4 PM</li>
+        <li>Sunday: Closed</li>
+      </ul>
+    </div>
+    <div class="col-sm-4">
+      <h4>Links:</h4>
+      <p>Home</p>
+      <p>About Us</p>
+      <p>Contact</p>
+      <input type="search" name="search" placeholder="Please, enter your email address.">
+    <button class="btn btn-dark">SUBSCRIBE</button><br>
+    <i class="fa fa-facebook"></i>
+    <i class="fa fa-twitter"></i>
+    <i class="fa fa-instagram"></i>
+    <i class="fa fa-google"></i>        
+    <i class="fa fa-whatsapp"></i>
+
+
+    </div>
+    </div>
+  </div>
+  <div class="container">
+    
+  </div><br>
+  <p class="text-center">Copyright © 2019. All Rights Reserved.</p>
+</div>

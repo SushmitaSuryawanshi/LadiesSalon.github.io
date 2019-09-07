@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Womans Beauty Parlour</title>
+
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+ <link rel="stylesheet" href="index2.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+</head>
+
+<style>
+.dropbtn {
+  background-color: ;
+  color: white;
+  padding: 7px 25px 7px 25px;
+color: black;
+  font-size: 20px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 5px 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: pink;}
+
+
+.parallax {
+  /* The image used */
+  background-image: url("a4.jpg");
+
+  /* Set a specific height */
+  min-height: 0px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.area {
+  background-color: #c5737a;
+  font-family: Helvetica, sans-serif;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.subcontainer {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.subcontainer::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+  left: 31px;
+  }
+  
+  /* Full-width containers */
+  .subcontainer {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+  
+  /* Make sure that all arrows are pointing leftwards */
+  .subcontainer::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+  left: 15px;
+  }
+  
+  /* Make all right containers behave like the left ones */
+  .right {
+  left: 0%;
+  }
+}
+</style>
+</head>
+<body>
+  <section>
+<div class=" img-responsive">
+    <img src="f2.jpg" style="width: 100%" >
+<nav class="navbar navbar-expand-lg navbar fixed-top">
+        <a href="index2.html" class="navbar-brand">BeautySalon</a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse3">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse3">
+            <form class="form-inline ml-auto" >
+                <div class="navbar-nav">
+                  <a href="index2.html" class=" navbar-item nav-link ">Home</a>
+              <a href="appoint.html" class="navbar-item nav-link ">Appointment</a>
+              <a href="products.html" class=" navbar-item nav-link ">Products</a>
+                <a href="about.html" class="navbar-item nav-link" >Offers</a>
+                <a href="contact.html" class="navbar-item nav-link" >Contact</a>
+            </div>
+            </form>
+        </div>
+    </nav>
+
+<div class="container">
+<h1 class="ml5">
+  <span class="text-wrapper">
+    <span class="line line1"></span>
+    <span class="letters letters-left">Our Products</span>
+    <span class="line line2"></span>
+  </span>
+</h1>
+
+
+<script>
+  anime.timeline({loop: true})
+  .add({
+    targets: '.ml5 .line',
+    opacity: [0.5,1],
+    scaleX: [0, 1],
+    easing: "easeInOutExpo",
+    duration: 700
+  }).add({
+    targets: '.ml5 .line',
+    duration: 600,
+    easing: "easeOutExpo",
+    translateY: (el, i) => (-0.625 + 0.625*2*i) + "em"
+  }).add({
+    targets: '.ml5 .ampersand',
+    opacity: [0,1],
+    scaleY: [0.5, 1],
+    easing: "easeOutExpo",
+    duration: 600,
+    offset: '-=600'
+  }).add({
+    targets: '.ml5 .letters-left',
+    opacity: [0,1],
+    translateX: ["0.5em", 0],
+    easing: "easeOutExpo",
+    duration: 600,
+    offset: '-=300'
+  }).add({
+    targets: '.ml5 .letters-right',
+    opacity: [0,1],
+    translateX: ["-0.5em", 0],
+    easing: "easeOutExpo",
+    duration: 600,
+    offset: '-=600'
+  }).add({
+    targets: '.ml5',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+</script>
+</div>
+  </div>
+</section>
+
+
+<section>
+  <div class="container" style="padding-top: 40px; padding-bottom: 40px">
+    <div class="row">
+      <div class="col-lg-2">
+        <div class="dropdown">
+  <button class="dropbtn" style="color: darkred; font-weight: bold;">Makeup</button>
+  <div class="dropdown-content">
+    <a href="#"><button> Bridal Makeup</button></a>
+    <a href="#"><button>Celebrity Makeup</button></a>
+    <a href="#"><button>Eye Make Up</button></a>
+    <a href="#"><button>Lip Make Up</button></a>
+    <a href="#"><button> Makeup Ideas</button></a>
+    <a href="#"><button>Mehendi Designs</button></a>
+    <a href="#"><button>Nail Art</button></a>
+  </div>
+</div>
+      </div>
+       <div class="col-lg-2">
+        <div class="dropdown">
+  <button class="dropbtn" style="color: darkred; font-weight: bold;">Hair Care</button>
+  <div class="dropdown-content">
+    <a href="#">Basic Haircare</a>
+    <a href="#">Dandruff</a>
+    <a href="#">Dry Haircare</a>
+    <a href="#">Haie Care</a>
+    <a href="#">Hair Care Ideas</a>
+    <a href="#">Hair Care Solutions</a>
+    <a href="#">Hair Colour</a>
+    <a href="#">Hair Fall</a>
+    <a href="#">Hair Growth</a>
+    <a href="#">Hair Treatment</a>
+    <a href="#">Oily Hair Care</a>
+  </div>
+</div>
+      </div>
+       <div class="col-lg-2">
+        <div class="dropdown">
+  <button class="dropbtn" style="color: darkred; font-weight: bold;">Skin Care</button>
+  <div class="dropdown-content">
+    <a href="#">Acne</a>
+    <a href="#">Anti Ageing</a>
+    <a href="#">Beauty Secrets</a>
+    <a href="#">Dry Skin</a>
+    <a href="#">Face Care Tips</a> 
+    <a href="#">Face Packs & Masks</a>
+    <a href="#">Glowing Skin</a>
+    <a href="#">Home made Tips</a>
+    <a href="#">Oily Skin</a>  
+    <a href="#">Skin Care Ideas</a>
+    <a href="#">Perfumes</a>
+    <a href="#">Sunscreen</a>      
+  </div>
+</div>
+      </div>
+       <div class="col-lg-2">
+        <div class="dropdown">
+  <button class="dropbtn" style="color: darkred; font-weight: bold;">Hairstyles</button>
+  <div class="dropdown-content">
+    <a href="#">Bob Hairstyle</a>
+    <a href="#">Braid Hairstyle</a>
+    <a href="#">Bridal Hairstyle</a>
+    <a href="#">Bun Hairstyle</a>
+    <a href="#">Celebrity Hairstyle</a>
+    <a href="#">Curly Hairstyle</a>
+    <a href="#">Different Hairstyles</a>
+    <a href="#">Trending Hairstyle</a>
+    <a href="#">Long Hairstyle</a>
+    <a href="#">Medium Hairstyle</a>   
+    <a href="#">Teen Hairstyle</a>
+    <a href="#">Wavy Hairstyle</a>  
+  </div>
+</div>
+      </div>
+       <div class="col-lg-2">
+        <div class="dropdown">
+  <button class="dropbtn" style="color: darkred; font-weight: bold;">HealthCare</button>
+  <div class="dropdown-content">
+    <a href="#">Diet Tips</a>
+    <a href="#">Health Devices</a>
+    <a href="#">Healthy Food</a>
+    <a href="">Home Remedies</a>
+    <a href="">Ingredients & Uses</a>
+    <a href="">Nutrition</a>
+    <a href="">Fitness</a>
+    <a href="">Weight Loss</a>
+    <a href="">Weight Gain</a>
+    <a href="">Yoga</a>
+    <a href="">Madicine</a>
+
+
+  </div>
+</div>
+      </div>
+       <div class="col-lg-2">
+        <div class="dropdown">
+  <button class="dropbtn" style="color: darkred; font-weight: bold;">Others</button>
+  <div class="dropdown-content">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="parallax "></div>
+</section>
+
+<section>
+
+    <div class="timeline area bg-transperant">
+  <div class="subcontainer left">
+    <div class="content">
+      <h2>1 MAC.</h2>
+      <ul>
+      <li></li>
+      </ul>
+    </div>
+  </div>
+  <div class=" subcontainer right">
+    <div class="content">
+      <h2>2 L'Oreal.</h2>
+      <p></p>
+    </div>
+  </div>
+  <div class="subcontainer left">
+    <div class="content">
+      <h2>3 Maybelline.</h2>
+      <p></p>
+    </div>
+  </div>
+  <div class="subcontainer right">
+    <div class="content">
+      <h2>4 Bobbi Brown.</h2>
+      <p></p>
+    </div>
+  </div>
+  <div class="subcontainer left">
+    <div class="content">
+      <h2>5 Lakmé</h2>
+      <p></p>
+    </div>
+  </div>
+  <div class=" subcontainer right">
+    <div class="content">
+      <h2>6 L'Oreal.</h2>
+      <p></p>
+    </div>
+  </div>
+</div>
+</div>
+
+</section>
+
+<section>
+  <div class="parallax "></div>
+</section>
+
+  <div id="dropDownSelect1"></div>
+
+<!--===============================================================================================-->
+  <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+  <script src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+  <script src="vendor/bootstrap/js/popper.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+  <script src="vendor/select2/select2.min.js"></script>
+  <script>
+    $(".selection-2").select2({
+      minimumResultsForSearch: 20,
+      dropdownParent: $('#dropDownSelect1')
+    });
+  </script>
+<!--===============================================================================================-->
+  <script src="vendor/daterangepicker/moment.min.js"></script>
+  <script src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+  <script src="vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+  <script src="js/main.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-23581568-13');
+  </script>
+</section>
+
+<section >
+  <button class="open-button" onclick="openForm()">Got a Question?</button>
+
+<div class="chat-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h3>Get an Answer.</h3>
+
+    <label for="msg"><b>Message</b></label>
+    <textarea placeholder="Type message.." name="msg" required></textarea>
+
+    <button type="submit" class="btn">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+
+</section>
+
+<div class="footer contact10-more">
+  <div class="container  ">
+    <div class="row">
+      <div class="col-sm-4" >
+        <h4></h4>
+        <h4>BeautySalon</h4>
+      <p><span style="font-weight: bold">Address:</span> 
+      Building no.17, Near Prozon Multiplex, Aurangabad  432001 India</p>
+      <p><span style="font-weight: bold">Branch:</span> 
+      Building no.40, Near Chichwad-Station, Pune  421015 India</p>
+      
+    </div>
+    <div class="col-sm-4">
+      <h4></h4>
+      <h5>OPEN HOURS:</h5>
+      <p>If you feel tired and stressed after a working day, we are happy to give you an enjoyable and healthy solution to find your balance again.</p>
+      <ul>
+        <li>Mon-Fri: 9 AM – 6 PM</li>
+        <li>Saturday: 9 AM – 4 PM</li>
+        <li>Sunday: Closed</li>
+      </ul>
+    </div>
+    <div class="col-sm-4">
+      <h4>Links:</h4>
+      <p>Home</p>
+      <p>About Us</p>
+      <p>Contact</p>
+      <input type="search" name="search" placeholder="Please, enter your email address.">
+    <button class="btn btn-dark">SUBSCRIBE</button><br>
+    <i class="fa fa-facebook"></i>
+    <i class="fa fa-twitter"></i>
+    <i class="fa fa-instagram"></i>
+    <i class="fa fa-google"></i>        
+    <i class="fa fa-whatsapp"></i>
+
+
+    </div>
+    </div>
+  </div>
+  <div class="container">
+    
+  </div><br>
+  <p class="text-center">Copyright © 2019. All Rights Reserved.</p>
+</div>
+</body>
+</html>

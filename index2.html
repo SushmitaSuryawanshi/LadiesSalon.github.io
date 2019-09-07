@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Womans Beauty Parlour</title>
+
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+ <link rel="stylesheet" href="index2.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+</head>
+
+<style>
+
+
+</style>
+
+<body>
+
+<div class=" img-responsive">
+		<img src="b4.jpg" style="width: 100%" >
+<nav class="navbar navbar-expand-lg navbar fixed-top">
+        <a href="index2.html" class="navbar-brand">BeautySalon</a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse3">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse3">
+            
+            <form class="form-inline ml-auto" >
+                <div class="navbar-nav">
+                  <a href="index2.html" class=" navbar-item nav-link ">HOME</a>
+                <a href="appoint.html" class=" navbar-item nav-link ">APPOINTMENT</a>
+                <a href="about.html" class=" navbar-item nav-link">OFFERS</a>
+                <a href="products.html" class=" navbar-item nav-link ">PRODUCTS</a>
+                <a href="contact.html" class=" navbar-item nav-link">CONTACT</a>
+            </div>
+            </form>
+        </div>
+    </nav>
+    <script>
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+</script>
+
+	</div>
+<br>
+<section>
+	<div class="container text-center">
+<h1 class="ml6">
+  <span class="text-wrapper">
+    <span class="line line1"></span>
+    <span class="letters letters-left" style="font-family: Lucida Calligraphy; font-weight: bold;">Treatments </span>
+    <span class="line line2"></span>
+  </span>
+</h1>
+
+
+<script>
+  anime.timeline({loop: true})
+  .add({
+    targets: '.ml6 .line',
+    opacity: [0.5,1],
+    scaleX: [0, 1],
+    easing: "easeInOutExpo",
+    duration: 700
+  }).add({
+    targets: '.ml6 .line',
+    duration: 600,
+    easing: "easeOutExpo",
+    translateY: (el, i) => (-0.625 + 0.625*2*i) + "em"
+  }).add({
+    targets: '.ml6 .ampersand',
+    opacity: [0,1],
+    scaleY: [0.5, 1],
+    easing: "easeOutExpo",
+    duration: 600,
+    offset: '-=600'
+  }).add({
+    targets: '.ml6 .letters-left',
+    opacity: [0,1],
+    translateX: ["0.5em", 0],
+    easing: "easeOutExpo",
+    duration: 600,
+    offset: '-=300'
+  }).add({
+    targets: '.ml6 .letters-right',
+    opacity: [0,1],
+    translateX: ["-0.5em", 0],
+    easing: "easeOutExpo",
+    duration: 600,
+    offset: '-=600'
+  }).add({
+    targets: '.ml6',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+</script>
+</div>
+</section>
+<br>
+
+<section>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-3 zoom">
+  <div class="card img-fluid">
+    <img class="card-img-top " src="x1.jpg" alt="Card image">
+    <div class="card-img">
+      <!-- <h4 class="card-title">MakeUp</h4> -->
+      <ul class="card-text list-group">
+      	<li class="list-group-item">Lipstick <p style="float: right;">Rs.222</p></li>
+        <li class="list-group-item">Eyeliner <p style="float: right;">Rs.112</p></li>
+        <li class="list-group-item">Foundation <p style="float: right;">Rs.322</p></li>
+        <li class="list-group-item">Kajal <p style="float: right;">Rs.400</p></li>
+       
+    </ul> 
+</div>
+</div>
+</div>
+<div class="col-sm-3 zoom">
+  <div class="card img-fluid">
+    <img class="card-img-top" src="x2.jpg" alt="Card image">
+    <div class="card-img">
+      <!-- <h4 class="card-title">MakeUp</h4> -->
+      <ul class="card-text list-group">
+      	<li class="list-group-item">Aloe Vera Gel  <p style="float: right;">Rs.400</p></li>
+        <li class="list-group-item">Skin Whitening <p style="float: right;">Rs.450</p></li>
+        <li class="list-group-item">Bio Oil  <p style="float: right;">Rs.220</p></li>
+        <li class="list-group-item">Face Mask <p style="float: right;">Rs.720</p></li>
+       
+    </ul> 
+</div>
+</div>
+</div>
+<div class="col-sm-3 zoom">
+  <div class="card img-fluid">
+    <img class="card-img-top" src="x5.jpg" alt="Card image">
+    <div class="card-img">
+      <!-- <h4 class="card-title">MakeUp</h4> -->
+      <ul class="card-text list-group">
+      	<li class="list-group-item">Hair Oil <p style="float: right;">Rs.300</p></li>
+        <li class="list-group-item">Hair Mask <p style="float: right;">Rs.340</p></li>
+        <li class="list-group-item">Livon Hair Gain  <p style="float: right;">Rs.400</p></li>
+        <li class="list-group-item">View All Hair Care <p style="float: right;">Rs.550</p></li>
+        
+    </ul> 
+</div>
+</div>
+</div>
+<div class="col-sm-3 zoom">
+  <div class="card img-fluid">
+    <img class="card-img-top" src="x6.jpg" alt="Card image">
+    <div class="card-img">
+      <!-- <h4 class="card-title">MakeUp</h4> -->
+      <ul class="card-text list-group">
+      	<li class="list-group-item">Nail Art Designs <p style="float: right;">Rs.550</p></li>
+        <li class="list-group-item">Bollywood Makeup <p style="float: right;">Rs.450</p></li>
+        <li class="list-group-item">Makeup Tutorials <p style="float: right;">Rs.350</p></li>
+        <li class="list-group-item">Bridal Makeup <p style="float: right;">Rs.870</p></li>
+        
+    </ul> 
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<br>
+<section>
+<div class="container">
+	<div class="row">
+		<div class="col-sm-12 ">
+			<p style="text-align: justify;">Our extensive range of treatments and services provides a choice that is rich in its diversity, yet structured to address your needs and aspirations whether they be more pampering focused or results driven. Escape, relax and rejuvenate. The Spa at Looks Good has sourced some of the world’s finest and most effective products and treatments to help you look good and feel great.
+			     </p>
+			     <p>Dermalogica from the United States has been dedicated for more than 25 years to delivering outstanding skin 
+			 care results through a process of education, product innovation, professional advice and effective treatments. We also offer excellent services to address your beauty and grooming needs from top to toe. Anne Sémonin collection combines a heady blend of aromatic essential oils and marine ingredients with classic French flair. They are tailor made and personally focused for luxury, pleasure and outstanding results.</p>
+		</div>
+	</div>
+</div>
+</section>
+
+<section>
+	<div class="container-fluid sec">
+		<div class="services">
+			<h1 style="color: #eb7862">Our Services</h1>
+		</div>
+		<div class="row">
+			<div class="col-md-3 text-center">
+					<img src="h4.jpg" alt="Lights" style="width:60%;" class="zoom">
+				<h3>Skin Care</h3>
+				<h6 style="color: #eb7862; padding: 10px 0 10px 0px;">The trick is to age honestly and gracefully and make it look great, so that everyone looks forward to it. </h6>
+			</div>
+			<div class="col-md-3 text-center">
+					<img src="h3.jpeg" alt="Lights" style="width:60%" class="zoom">
+				<h3>Hair  Care</h3>
+				<h6 style="color: #eb7862; padding: 10px 0 10px 0px;">The trick is to age honestly and gracefully and make it look great, so that everyone looks forward to it. </h6>
+			</div>
+			<div class="col-md-3 text-center">
+				
+					<img src="h11.jpg" alt="Nature" style="width:60%" class="zoom">
+				<h3>Spa Care</h3>
+				<h6 style="color: #eb7862; padding: 10px 0 10px 0px;">The trick is to age honestly and gracefully and make it look great, so that everyone looks forward to it. </h6>
+			</div>
+			<div class="col-md-3 text-center">
+				
+					<img src="u11.jpg" alt="Nature" style="width:60%" class="zoom">
+				<h3>Nail Care</h3>
+				<h6 style="color: #eb7862; padding: 10px 0 10px 0px;">The trick is to age honestly and gracefully and make it look great, so that everyone looks forward to it. </h6>
+			</div>
+		</div>
+	</div>
+</section>
+
+<br>
+<section>
+	<div class="container text-center">
+<h1 class="ml6">
+  <span class="text-wrapper">
+    <span class="line line1"></span>
+    <span class="letters letters-left" style="font-family: Lucida Calligraphy; font-weight: bold;">Discover </span>
+    <span class="line line2"></span>
+  </span>
+</h1>
+
+
+<script>
+  anime.timeline({loop: true})
+  .add({
+    targets: '.ml6 .line',
+    opacity: [0.5,1],
+    scaleX: [0, 1],
+    easing: "easeInOutExpo",
+    duration: 700
+  }).add({
+    targets: '.ml6 .line',
+    duration: 600,
+    easing: "easeOutExpo",
+    translateY: (el, i) => (-0.625 + 0.625*2*i) + "em"
+  }).add({
+    targets: '.ml6 .ampersand',
+    opacity: [0,1],
+    scaleY: [0.5, 1],
+    easing: "easeOutExpo",
+    duration: 600,
+    offset: '-=600'
+  }).add({
+    targets: '.ml6 .letters-left',
+    opacity: [0,1],
+    translateX: ["0.5em", 0],
+    easing: "easeOutExpo",
+    duration: 600,
+    offset: '-=300'
+  }).add({
+    targets: '.ml6 .letters-right',
+    opacity: [0,1],
+    translateX: ["-0.5em", 0],
+    easing: "easeOutExpo",
+    duration: 600,
+    offset: '-=600'
+  }).add({
+    targets: '.ml6',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+</script>
+</div>
+</section>
+<br>
+<section>
+	<div class="container text-center">
+		<div class="row">
+			<div class="col-sm-9">
+					<img src="b3.jpg" alt="Lights" class="img-responsive" style="width: 100%">
+				</div>
+				<div class="col-sm-3">
+					<h4 style="color: brown">Every Bride's Choice</h4><br>
+				 <p style="text-align: justify;">Welcome to Good Looks Beauty Salon & Spa! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac lectus mauris. Aliquam in est nisi. Mauris eu rhoncus diam, vel fringilla orci. Donec venenatis imperdiet nisl, vitae sagittis mauris tincidunt sed. In quis hendrerit risus etam nunc brevis uniquod.</p>
+								
+			</div>
+		</div>
+	</div>
+</section>
+<br>
+
+
+
+<section>
+<div class="services">
+			<h1 class="p1">Our Feedback</h1>
+	<div class="container-fluid ">
+
+		<div class="row">
+
+			<div class="col-sm-6">
+	<div class=" feedback">
+  <img src="user1.png" alt="Avatar" style="width:90px">
+  <p><span style="font-weight: bold;">Sushmita Suryawanshi</span> owner of company site </p>
+  <p>The trick is to age honestly and gracefully and make it look great, so that everyone looks forward to it.    
+</p><span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+</div>
+</div>
+<div class="col-sm-6">
+<div class=" feedback">
+  <img src="user2.png" alt="Avatar" style="width:90px">
+  <p><span style="font-weight: bold;">Sushmita Suryawanshi</span> owner of company site </p>
+  <p>The trick is to age honestly and gracefully and make it look great, so that everyone looks forward to it.     
+</p><span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+</div>
+</div>
+<div class="col-sm-6">
+<div class=" feedback">
+  <img src="user1.png" alt="Avatar" style="width:90px">
+  <p><span style="font-weight: bold;">Sushmita Suryawanshi</span> owner of company site </p>
+  <p>The trick is to age honestly and gracefully and make it look great, so that everyone looks forward to it.     
+</p><span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+</div>
+</div>
+<div class="col-sm-6">
+<div class=" feedback">
+  <img src="user2.png" alt="Avatar" style="width:90px">
+ <p><span style="font-weight: bold;">Sushmita Suryawanshi</span> owner of company site </p>
+  <p>The trick is to age honestly and gracefully and make it look great, so that everyone looks forward to it.     
+</p><span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+</div>
+</div>
+	</div>	</div>
+	</div>
+</section>
+
+
+<section >
+  <button class="open-button" onclick="openForm()">Got a Question?</button>
+
+<div class="chat-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h3>Get an Answer.</h3>
+
+    <label for="msg"><b>Message</b></label>
+    <textarea placeholder="Type message.." name="msg" required></textarea>
+
+    <button type="submit" class="btn">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+
+</section>
+
+<div class="footer contact10-more">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-4" >
+				<h4></h4>
+				<h4>BeautySalon</h4>
+			<p><span style="font-weight: bold">Address:</span> 
+			Building no.17, Near Prozon Multiplex, Aurangabad  432001 India</p>
+			<p><span style="font-weight: bold">Branch:</span> 
+			Building no.40, Near Chichwad-Station, Pune  421015 India</p>
+			
+		</div>
+		<div class="col-sm-4">
+			<h4></h4>
+			<h5>OPEN HOURS:</h5>
+			<p>If you feel tired and stressed after a working day, we are happy to give you an enjoyable and healthy solution to find your balance again.</p>
+			<ul>
+				<li>Mon-Fri: 9 AM – 6 PM</li>
+				<li>Saturday: 9 AM – 4 PM</li>
+				<li>Sunday: Closed</li>
+			</ul>
+		</div>
+		<div class="col-sm-4">
+			<h4>Links:</h4>
+			<p>Home</p>
+			<p>About Us</p>
+			<p>Contact</p>
+			<input type="search" name="search" placeholder="Please, enter your email address.">
+		<button class="btn btn-dark">SUBSCRIBE</button><br>
+		<i class="fa fa-facebook"></i>
+		<i class="fa fa-twitter"></i>
+		<i class="fa fa-instagram"></i>
+		<i class="fa fa-google"></i>				
+		<i class="fa fa-whatsapp"></i>
+
+
+		</div>
+		</div>
+	</div>
+	<div class="container">
+		
+	</div><br>
+  <p class="text-center">Copyright © 2019. All Rights Reserved.</p>
+</div>
+</body>
+</html>
